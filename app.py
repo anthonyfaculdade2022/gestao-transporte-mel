@@ -1529,7 +1529,7 @@ if pagina == "Painel de Operações":
                         label_visibility="collapsed")
                     
                     st.markdown("<small style='font-weight: 700; color: #CBD5E1; margin-top: 12px;'>Observação</small>", unsafe_allow_html=True)
-                    obs = st.text_area("Obs", value="", height=60, label_visibility="collapsed")
+                    obs = st.text_area("Obs", value="", height=68, label_visibility="collapsed")
                     
                     col1, col2 = st.columns(2)
                     with col1:
@@ -1582,7 +1582,7 @@ if pagina == "Painel de Operações":
                     st.markdown("<strong style='color: #FF4444;'>Enviar para Manutenção</strong>", unsafe_allow_html=True)
                     with st.form("form_manut"):
                         motivo = st.text_input("Motivo", label_visibility="collapsed")
-                        obs = st.text_area("Observação", height=60, label_visibility="collapsed")
+                        obs = st.text_area("Observação", height=68, label_visibility="collapsed")
                         prev = st.text_input("Previsão", placeholder="HH:MM", label_visibility="collapsed")
                         
                         col_x, col_y = st.columns(2)
